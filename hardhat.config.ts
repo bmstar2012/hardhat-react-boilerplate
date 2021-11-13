@@ -23,9 +23,9 @@ task("accounts", "Prints the list of accounts", async (args, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 const config: HardhatUserConfig = {
-  react: {
-    providerPriority: ["web3modal", "hardhat"],
-  },
+  // react: {
+  //   providerPriority: ["hardhat", "web3modal"],
+  // },
   networks: {
     hardhat: {
       chainId: 1337,
@@ -47,7 +47,7 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.7.3",
+        version: "0.8.4",
         settings: {
           optimizer: {
             enabled: true,
